@@ -8,4 +8,4 @@ Requirement:
 
 Usage
 =====
-node node_main.js <your_pinterest_name>
+node node_main.js your_pinterest_name

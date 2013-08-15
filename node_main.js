@@ -66,7 +66,7 @@ getFollowing.on('close', function(code) {
         });
 
         feed_out.category('Pinterest');
-        for (var i = 0; i < feeds.length || i < 20; i++) {
+        for (var i = 0; i < feeds.length || i < 50; i++) {
             feed_out.item({
                 title: feeds[i].title,
                 link: feeds[i].link,

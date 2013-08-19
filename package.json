@@ -1,16 +1,17 @@
 {
-  "name":    "PinterestRSSAggregator",
-  "version": "0.0.1",
+    "name": "PinterestRSSAggregator",
+    "version": "0.0.1",
 
-  "description": "Aggregate rss feed of your followings",
+    "description": "Aggregate rss feed of your followings",
 
-  "dependencies": {
-      "feed":"",
-      "google-feed-api":"",
-      "async":""
-  },
+    "dependencies": {
+        "feed": "",
+        "google-feed-api": "",
+        "async": "",
+        "googleapis": ""
+    },
 
-  "engines": {
-    "node": "0.10.x"
-  }
+    "engines": {
+        "node": "0.10.x"
+    }
 }

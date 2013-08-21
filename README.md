@@ -8,4 +8,6 @@ Requirement:
 
 Usage
 =====
-node node_main.js your_pinterest_name
+* Login to Google drive first by : node auth_gdrive.js
+* node node_main.js your_pinterest_name
+* RSS link is printed at the latest line

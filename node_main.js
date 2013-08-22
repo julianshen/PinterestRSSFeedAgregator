@@ -67,7 +67,7 @@ getFollowing.on('close', function(code) {
         });
 
         feed_out.category('Pinterest');
-        for (var i = 0; i < feeds.length || i < 50; i++) {
+        for (var i = 0; i < feeds.length && i < 50; i++) {
             feed_out.item({
                 title: feeds[i].title,
                 link: feeds[i].link,
@@ -122,7 +122,7 @@ getFollowing.on('close', function(code) {
 
             var printWebViewLink = function(fileId) {
                 gdrive.getFile(fileId, function(err, result) {
-                    if(err) {
+                    if (err) {
                         throw err;
                     }
 
@@ -140,7 +140,9 @@ getFollowing.on('close', function(code) {
                     var rssFolderId = result;
                     console.log('RSS Folder : ' + rssFolderId);
                     printWebViewLink(rssFolderId);
-                    gdrive.createTextFile(rss_file_name, output, {'id':rssFolderId}, function(err, result) {
+                    gdrive.createTextFile(rss_file_name, output, {
+                        'id': rssFolderId
+                    }, function(err, result) {
                         if (err) {
                             console.log(err);
                             throw err;
@@ -181,7 +183,7 @@ getFollowing.on('close', function(code) {
                     });
 
                     getRSSFolder(function(err, result) {
-                        if(err) {
+                        if (err) {
                             console.log(err);
                             return;
                         }
